@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .backgroundImage {
+    @apply relative h-96 bg-cover bg-center;
+  }
+  
+  .overlayBox {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-80 p-4 rounded-lg;
+  }
+  
+  .section {
+    @apply py-16;
+  }
+  
+  .trendingGrid {
+    @apply mt-16;
+  }
+  
+  .footer {
+    @apply mt-16 py-4 bg-gradient-to-r from-pink-200 to-pink-700 text-white text-center;
+  }
+
+table{
+  border: #a1a1a1 1px solid !important;
+  border-radius: 8px;
+}
